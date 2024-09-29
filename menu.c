@@ -3,8 +3,10 @@
 #include "index_last_odd.h"
 #include "sum_between_even_odd.h"
 #include "sum_before_even_and_after_odd.h"
+#include "locale.h"
 int main()
 {
+	setlocale(LC_ALL,"RU");
 	int array[100];
 	int size = 0; 
 	char c;
@@ -30,7 +32,7 @@ int main()
 		printf("%d\n", sum_before_even_and_after_odd(array, index_first_even(array), index_last_odd(array, size),size));
 		break;
 	default:
-		printf("The data is not correct!");
+		printf("Данные некорректны");
 		return -1;
 	}
 	return 0;
