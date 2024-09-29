@@ -26,14 +26,14 @@ int main()
 		printf("%d\n", index_last_odd(array,size));
 		break;
 	case 2:
-		printf("%d\n", sum_between_even_odd(array, index_first_even(array), index_last_odd(array, size)));
+		printf("%d\n", sum_between_even_odd(array,size));
 		break;
 	case 3:
-		printf("%d\n", sum_before_even_and_after_odd(array, index_first_even(array), index_last_odd(array, size),size));
+		printf("%d\n", sum_before_even_and_after_odd(array,size));
 		break;
 	default:
 		printf("Данные некорректны");
-		return -1;
+
 	}
 	return 0;
 }
